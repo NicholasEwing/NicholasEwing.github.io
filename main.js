@@ -11,7 +11,8 @@ function createGrid(x) {
 function randomGrid() {
 	resetGrid();
 	$('.box').mouseenter(function() {
-		$(this).css('background-color', '#' + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10));
+		var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+		$(this).css('background-color', randomColor);
 	});	
 }
 
