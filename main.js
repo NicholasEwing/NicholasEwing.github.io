@@ -21,12 +21,12 @@ function resetGrid() {
 	var input = prompt("How many squares do you want on the edges of the grid?");
 	createGrid(input);
 	$('.box').mouseenter(function() {
-		$(this).css('background-color', black);
+		$(this).css('background-color', "black");
 	});
 }
 
 function clearGrid() {
-	$(this).css('background-color', white);
+	$(this).css('background-color', "white");
 }
 
 $(document).ready(function() {
