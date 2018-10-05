@@ -21,19 +21,19 @@ function resetGrid() {
 	var input = prompt("How many squares do you want on the edges of the grid?");
 	createGrid(input);
 	$('.box').mouseenter(function() {
-		$(this).addClass('active');
+		$(this).css('background-color', black);
 	});
 }
 
 function clearGrid() {
-	$('.box').removeClass('active');
+	$(this).css('background-color', white);
 }
 
 $(document).ready(function() {
 	createGrid(16);
 
 	$('.box').mouseenter(function() {
-		$(this).addClass('active');
+		$(this).css('background-color', black);
 	});
 
 	/* I got stuck on the "reset" part. I thought there
