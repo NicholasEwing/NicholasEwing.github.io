@@ -26,7 +26,7 @@ function resetGrid() {
 }
 
 function clearGrid() {
-	$(this).css('background-color', "white");
+	$('.box').css('background-color', "white");
 }
 
 $(document).ready(function() {
@@ -35,15 +35,6 @@ $(document).ready(function() {
 	$('.box').mouseenter(function() {
 		$(this).css('background-color', "black");
 	});
-
-	/* I got stuck on the "reset" part. I thought there
-	was a more intricate way to turn the addClass feature
-	back on after running resetGrid. Turns out I can just
-	put the mouseenter function back inside.
-
-	I thought a bit too hard about it since I wanted to try
-	and avoid repeating any code, but at least I learned something.
-	*/
 
 	$('.reset-grid').click(function() {
 		resetGrid();
