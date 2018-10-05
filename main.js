@@ -33,7 +33,7 @@ $(document).ready(function() {
 	createGrid(16);
 
 	$('.box').mouseenter(function() {
-		$(this).css('background-color', black);
+		$(this).css('background-color', "black");
 	});
 
 	/* I got stuck on the "reset" part. I thought there
